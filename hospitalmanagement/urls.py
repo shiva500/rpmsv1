@@ -2,7 +2,7 @@
 
 Developed By : group7
 facebook : fb.com/group7.luv
-Youtube :youtube.com/lazycoders
+Youtube :youtube.com/group7s
 
 
 """
@@ -111,4 +111,4 @@ urlpatterns +=[
 
 #Developed By : group7
 #facebook : fb.com/group7.luv
-#Youtube :youtube.com/lazycoders
+#Youtube :youtube.com/group7s

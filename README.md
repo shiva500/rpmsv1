@@ -78,4 +78,4 @@ This project is developed for demo purpose and it's not supposed to be used in r
 ## Feedback
 Any suggestion and feedback is welcome. You can message me on facebook
 - [Contact on Facebook](https://fb.com/group7.luv)
-- [Subscribe my Channel LazyCoder On Youtube](https://youtube.com/lazycoders)
+- [Subscribe my Channel group7 On Youtube](https://youtube.com/group7s)
