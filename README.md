@@ -1,10 +1,10 @@
 
 # Hospital Management
-![developer](https://img.shields.io/badge/Developed%20By%20%3A-group7%red)
+![Lamar University-Group7 students(Made with love)]
 ---
 ## screenshots
 ### Homepage
-![homepage snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/homepage1.png)
+![homepage snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/homepage.png)
 ### Admin Dashboard
 ![dashboard snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/admin_dashboard1.png)
 ### Invoice
