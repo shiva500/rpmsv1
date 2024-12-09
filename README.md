@@ -4,7 +4,7 @@
 ---
 ## screenshots
 ### Homepage
-![homepage snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/homepage.png?raw=true)
+![homepage snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/admin_dashboard.png)
 ### Admin Dashboard
 ![dashboard snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/admin_dashboard.png?raw=true)
 ### Invoice
