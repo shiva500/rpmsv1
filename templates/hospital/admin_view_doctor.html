@@ -1,6 +1,6 @@
 {% extends 'hospital/admin_base.html' %}
 {% block content %}
-{%load static%}
+{% load static %}
 
 <head>
   <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -21,10 +21,7 @@
     }
   </style>
 </head>
-<!--
-written By : group7
-facebook : fb.com/group7.luv
--->
+
 <div class="container">
   <div class="panel panel-primary">
     <div class="panel-heading">
@@ -33,7 +30,6 @@ facebook : fb.com/group7.luv
     <table class="table table-hover" id="dev-table">
       <thead>
         <tr>
-
           <th>Name</th>
           <th>Profile Picture</th>
           <th>Mobile</th>
@@ -43,25 +39,35 @@ facebook : fb.com/group7.luv
           <th>Delete</th>
         </tr>
       </thead>
-      {% for d in doctors %}
-      <tr>
-
-        <td> {{d.get_name}}</td>
-        <td> <img src="{% static d.profile_pic.url %}" alt="Profile Pic" height="40px" width="40px" /></td>
-        <td>{{d.mobile}}</td>
-        <td>{{d.address}}</td>
-        <td>{{d.department}}</td>
-        <td><a class="btn btn-primary btn-xs" href="{% url 'update-doctor' d.id  %}"><span class="glyphicon glyphicon-edit"></span></a></td>
-        <td><a class="btn btn-danger btn-xs" href="{% url 'delete-doctor-from-hospital' d.id  %}"><span class="glyphicon glyphicon-trash"></span></a></td>
-      </tr>
-      {% endfor %}
+      <tbody>
+        {% for d in doctors %}
+        <tr>
+          <td>{{ d.get_name }}</td>
+          <td>
+            {% if d.profile_pic %}
+              <img src="{{ d.profile_pic.url }}" alt="Profile Pic" height="40px" width="40px" />
+            {% else %}
+              <img src="{% static 'images/doctor.png' %}" alt="Default Profile Pic" height="40px" width="40px" />
+            {% endif %}
+          </td>
+          <td>{{ d.mobile }}</td>
+          <td>{{ d.address }}</td>
+          <td>{{ d.department }}</td>
+          <td>
+            <a class="btn btn-primary btn-xs" href="{% url 'update-doctor' d.id %}">
+              <span class="glyphicon glyphicon-edit"></span>
+            </a>
+          </td>
+          <td>
+            <a class="btn btn-danger btn-xs" href="{% url 'delete-doctor-from-hospital' d.id %}">
+              <span class="glyphicon glyphicon-trash"></span>
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
     </table>
   </div>
 </div>
-<!--
-developed By : group7
-facebook : fb.com/group7.luv
-youtube : youtube.com/group7s
--->
 
 {% endblock content %}

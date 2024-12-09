@@ -551,6 +551,11 @@ def reject_appointment_view(request,pk):
     appointment=models.Appointment.objects.get(id=pk)
     appointment.delete()
     return redirect('admin-approve-appointment')
+
+# @login_required
+# def user_logout(request):
+#     #logout(request)
+#     return render(request, 'hospital/logout.html', {})
 #---------------------------------------------------------------------------------
 #------------------------ ADMIN RELATED VIEWS END ------------------------------
 #---------------------------------------------------------------------------------
@@ -762,8 +767,6 @@ def search_doctor_view(request):
     return render(request,'hospital/patient_view_doctor.html',{'patient':patient,'doctors':doctors})
 
 
-
-
 @login_required(login_url='patientlogin')
 @user_passes_test(is_patient)
 def patient_view_appointment_view(request):
@@ -843,6 +846,4 @@ def contactus_view(request):
 
 
 
-#Developed By : group7
-#facebook : fb.com/group7.luv
-#Youtube :youtube.com/group7s
+
