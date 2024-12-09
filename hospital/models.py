@@ -21,6 +21,12 @@ class Doctor(models.Model):
     def get_name(self):
         return self.user.first_name+" "+self.user.last_name
     @property
+    def profile_pic_url(self):
+        # Return profile_pic URL or a default
+        if self.profile_pic:
+            return self.profile_pic.url
+        return 'images/doctor.png'
+    @property
     def get_id(self):
         return self.user.id
     def __str__(self):
@@ -43,6 +49,12 @@ class Patient(models.Model):
     @property
     def get_id(self):
         return self.user.id
+    @property
+    def profile_pic_url(self):
+        # Return profile_pic URL or a default
+        if self.profile_pic:
+            return self.profile_pic.url
+        return 'images/doctor.png'
     def __str__(self):
         return self.user.first_name+" ("+self.symptoms+")"
 

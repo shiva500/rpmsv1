@@ -4,7 +4,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>group7 || group7</title>
+  <title>Remote Patient Monitoring System</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -277,7 +277,9 @@
   <nav class="menu" tabindex="0">
     <div class="smartphone-menu-trigger"></div>
     <header class="avatar">
-      <img src="{% static doctor.profile_pic.url %}" alt="Profile Pic" />
+      <img src="{{ doctor.profile_pic.url if doctor.profile_pic else '/static/images/doctor.png' }}" alt="Doctor Profile Picture">
+
+      <!--<img src="{% static doctor.profile_pic.url %}" alt="Profile Pic" />-->
       <br><br>
       <h6>Doctor</h6>
       <h2>{{request.user.first_name}}</h2>
@@ -298,8 +300,10 @@
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav" style=" margin-left: 90%;">
+            <!-- <a href="{% url 'logout' %}" class="nav-item nav-link">Logout</a> -->
 
-            <a href="/logout" class="nav-item nav-link">Logout</a>
+            <a href="logout" class="nav-item nav-link">Logout</a>
+            
           </div>
         </div>
       </nav>
@@ -322,9 +326,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
-            <div style="color:#ffffff;" class="wow fadeInUp footer-copyright">
-              <p>Made with Love from Group7 <br>
-                Copyright &copy; 2020 group7 </p>
+            <div style="color:#ffffff;" class="wow fadeInUp footer">
+              <p>Group7-LamarUniversity <br>
+                Copyright &copy; group7-lamarUniversity </p>
             </div>
           </div>
         </div>
@@ -334,9 +338,8 @@
   <!-- partial -->
 </body>
 <!--
-developed By : group7
-facebook : fb.com/group7.luv
-youtube : youtube.com/group7s
+developed By : group7-lamarUniversity
+
 -->
 
 </html>
