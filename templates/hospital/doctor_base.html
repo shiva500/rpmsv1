@@ -277,9 +277,9 @@
   <nav class="menu" tabindex="0">
     <div class="smartphone-menu-trigger"></div>
     <header class="avatar">
-      <img src="{{ doctor.profile_pic.url if doctor.profile_pic else '/static/images/doctor.png' }}" alt="Doctor Profile Picture">
+      <!-- <img src="{{ doctor.profile_pic_url }}" alt="Doctor Profile Picture"> -->
 
-      <!--<img src="{% static doctor.profile_pic.url %}" alt="Profile Pic" />-->
+      <img src="{% static doctor.profile_pic.url %}" alt="Profile Pic" />
       <br><br>
       <h6>Doctor</h6>
       <h2>{{request.user.first_name}}</h2>
