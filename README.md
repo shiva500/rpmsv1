@@ -1,6 +1,6 @@
 
 # Hospital Management
-[Lamar University-Group7 students]
+Hospital Management system. A project created by Lamar University students(Group7).
 ---
 ## screenshots
 ### Homepage
