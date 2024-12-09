@@ -48,7 +48,8 @@
 </head>
 <br><br>
 <!------ update page for doctor by admin(group7)  ---------->
-<form method="post" enctype="multipart/form-data">
+<!--<form method="post" enctype="multipart/form-data">-->
+<form method="post" action="{% url 'update-doctor' pk=doctor.id %}" enctype="multipart/form-data">
   {% csrf_token %}
   <div class="container register-form">
     <div class="form">

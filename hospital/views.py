@@ -199,7 +199,8 @@ def update_doctor_view(request,pk):
 
     userForm=forms.DoctorUserForm(instance=user)
     doctorForm=forms.DoctorForm(request.FILES,instance=doctor)
-    mydict={'userForm':userForm,'doctorForm':doctorForm}
+    mydict = {'userForm': userForm, 'doctorForm': doctorForm}
+   # mydict={'userForm':userForm,'doctorForm':doctorForm}
     if request.method=='POST':
         userForm=forms.DoctorUserForm(request.POST,instance=user)
         doctorForm=forms.DoctorForm(request.POST,request.FILES,instance=doctor)
@@ -212,7 +213,6 @@ def update_doctor_view(request,pk):
             doctor.save()
             return redirect('admin-view-doctor')
     return render(request,'hospital/admin_update_doctor.html',context=mydict)
-
 
 
 

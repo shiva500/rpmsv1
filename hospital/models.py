@@ -20,17 +20,24 @@ class Doctor(models.Model):
     @property
     def get_name(self):
         return self.user.first_name+" "+self.user.last_name
+    # @property
+    # def profile_pic_url(self):
+    #     # Return profile_pic URL or a default
+    #     if self.profile_pic:
+    #         return self.profile_pic.url
+    #     return 'images/doctor.png'
     @property
     def profile_pic_url(self):
-        # Return profile_pic URL or a default
         if self.profile_pic:
-            return self.profile_pic.url
-        return 'images/doctor.png'
+            return self.profile_pic.url  # Points to the file in the media directory
+        return '/static/images/doctor.png'  # Fallback to default image
     @property
     def get_id(self):
         return self.user.id
     def __str__(self):
         return "{} ({})".format(self.user.first_name,self.department)
+    
+
 
 
 
