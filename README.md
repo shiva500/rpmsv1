@@ -1,16 +1,16 @@
 
 # Hospital Management
-![developer](https://img.shields.io/badge/Developed%20By%20%3A-group7%20Kumar-red)
+![developer](https://img.shields.io/badge/Developed%20By%20%3A-group7%red)
 ---
 ## screenshots
 ### Homepage
-![homepage snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/admin_dashboard.png)
+![homepage snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/homepage1.png)
 ### Admin Dashboard
-![dashboard snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/admin_dashboard.png?raw=true)
+![dashboard snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/admin_dashboard1.png)
 ### Invoice
-![invoice snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/invoice.png?raw=true)
+![invoice snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/invoice1.png)
 ### Doctor list
-![doctor snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/admin_doctor.png?raw=true)
+![doctor snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/admin-doctor1.png)
 ---
 ## Functions
 ### Admin
