@@ -37,10 +37,10 @@
 ---
 
 ## HOW TO RUN THIS PROJECT
-- Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
+- Install Python(3.10.15) (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 ```
-pip install django==3.0.5
+pip install django==3.2.0
 pip install django-widget-tweaks
 pip install xhtml2pdf
 ```
@@ -77,5 +77,4 @@ This project is developed for demo purpose and it's not supposed to be used in r
 
 ## Feedback
 Any suggestion and feedback is welcome. You can message me on facebook
-- [Contact on Facebook](https://fb.com/group7.luv)
-- [Subscribe my Channel group7 On Youtube](https://youtube.com/group7s)
+
