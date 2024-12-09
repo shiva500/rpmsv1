@@ -552,10 +552,10 @@ def reject_appointment_view(request,pk):
     appointment.delete()
     return redirect('admin-approve-appointment')
 
-# @login_required
-# def user_logout(request):
-#     #logout(request)
-#     return render(request, 'hospital/logout.html', {})
+@login_required(login_url='adminlogin')
+def user_logout(request):
+    #logout(request)
+    return render(request, 'hospital/logout.html', {})
 #---------------------------------------------------------------------------------
 #------------------------ ADMIN RELATED VIEWS END ------------------------------
 #---------------------------------------------------------------------------------
