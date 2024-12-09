@@ -67,6 +67,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.csrf', 
             ],
         },
     },
@@ -130,7 +131,7 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'static')
 
 
 
-LOGIN_REDIRECT_URL='hospital/index.html'
+LOGIN_REDIRECT_URL='/'
 LOGOUT_REDIRECT_URL = '/'  # Redirects to the homepage after logout
 
 

@@ -1,2 +1,11 @@
+{% extends 'hospital/base.html' %}
+
 {% block title %}Logged out{% endblock %}
+
 {% block content %}
+<div class="container text-center mt-5">
+    <h1>You have successfully logged out.</h1>
+    <p>Thank you for using the system. To log back in, click the button below.</p>
+    <a href="{% url 'adminlogin' %}" class="btn btn-primary mt-3">Log in again</a>
+</div>
+{% endblock %}
