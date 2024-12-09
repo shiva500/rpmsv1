@@ -6,7 +6,6 @@ Developed By : group7
 
 
 
-
 from django.contrib import admin
 from django.urls import path
 from hospital import views
@@ -79,7 +78,7 @@ urlpatterns = [
 ]
 
 
-#---------FOR DOCTOR RELATED URLS-------------------------------------
+#---------URLS for doctor related-------------------------------------
 urlpatterns +=[
     path('doctor-dashboard', views.doctor_dashboard_view,name='doctor-dashboard'),
     path('search', views.search_view,name='search'),
@@ -97,7 +96,7 @@ urlpatterns +=[
 
 
 
-#---------FOR PATIENT RELATED URLS-------------------------------------
+#---------URLS for patient related-------------------------------------
 urlpatterns +=[
 
     path('patient-dashboard', views.patient_dashboard_view,name='patient-dashboard'),
