@@ -1,6 +1,6 @@
 
 # Hospital Management
-![Lamar University-Group7 students(Made with love)]
+[Lamar University-Group7 students]
 ---
 ## screenshots
 ### Homepage
