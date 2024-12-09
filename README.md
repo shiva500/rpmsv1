@@ -1,16 +1,16 @@
 
 # Hospital Management
-![developer](https://img.shields.io/badge/Developed%20By%20%3A-group7%20Kumar-red)
+Hospital Management system. A project created by Lamar University students(Group7).
 ---
 ## screenshots
 ### Homepage
-![homepage snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/homepage.png?raw=true)
+![homepage snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/homepage.png)
 ### Admin Dashboard
-![dashboard snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/admin_dashboard.png?raw=true)
+![dashboard snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/admin_dashboard1.png)
 ### Invoice
-![invoice snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/invoice.png?raw=true)
+![invoice snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/invoice1.png)
 ### Doctor list
-![doctor snap](https://github.com/group7kumar1503/hospitalmanagement/blob/master/static/screenshots/admin_doctor.png?raw=true)
+![doctor snap](https://github.com/shiva500/rpmsv1/blob/main/static/screenshots/admin-doctor1.png)
 ---
 ## Functions
 ### Admin
@@ -37,10 +37,10 @@
 ---
 
 ## HOW TO RUN THIS PROJECT
-- Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
+- Install Python(3.10.15) (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 ```
-pip install django==3.0.5
+pip install django==3.2.0
 pip install django-widget-tweaks
 pip install xhtml2pdf
 ```
@@ -76,6 +76,5 @@ https://myaccount.google.com/lesssecureapps
 This project is developed for demo purpose and it's not supposed to be used in real application.
 
 ## Feedback
-Any suggestion and feedback is welcome. You can message me on facebook
-- [Contact on Facebook](https://fb.com/group7.luv)
-- [Subscribe my Channel group7 On Youtube](https://youtube.com/group7s)
+Any suggestion and feedback is welcome.
+
